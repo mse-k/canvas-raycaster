@@ -7,7 +7,7 @@ function RayCaster(canvas, w, h, z, level, player, inputBuffer) {
     this.TO_RADS = Math.PI / 180;
     this.TO_DEGS = 180 / Math.PI;
     this.INFINITY = 10000;
-    this.RES = { w:w, h:h, hh:h * .5 };
+    this.RES = { w:w, h:h, hh:h * .25 };
     this.FOV = 60 * this.TO_RADS;
     this.SLIVER_ARC = this.FOV / this.RES.w;
     this.TABLE_ENTRIES = Math.ceil(Math.PI * 2 / this.SLIVER_ARC);
